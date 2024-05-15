@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="fname">Imię: </label>
+            <input type="text" name="fname" id="fname" required>
+            <button type="button" onclick="checkLenght(imieInput)">Sprawdz!!!</button>
+        </div>
+        <div>
+            <label for="fsurname">Nazwisko: </label>
+            <input type="text" name="fsurname" id="fsurname" required>
+        </div>
+        <div>
+            <label for="femail">E-mail: </label>
+            <input type="email" name="femail" id="femail">
+        </div>
+        <div>
+            <label for="fpassword">Password: </label>
+            <input type="password" name="fpassword" id="fpassword">
+            <button type="button" onclick="checkPassword(passwordInput)">Sprawdz!!!</button>
+        </div>
+        <div>
+            <label for="fpassword">Powtorz hasło: </label>
+            <input type="password" name="fpassword" id="fpassword1">
+            <button type="button" onclick="porownHaslo(passwordInput)">Porownaj hasło!!!</button>
+        </div>
+        <div>
+            <label for="fsex">Płec: </label>
+            <input type="radio" name="fsex" id="fsex">
+            <label for="fmale">Mężczyzna</label>
+            <input type="radio" name="fsex" id="fmale">
+            <label for="ffemale">Kobieta</label>
+            <input type="radio" name="fsex" id="ffemale">
+        </div>
+        <div>
+            <label for="fphonenumber">Numer telefonu: </label>
+            <input type="tel" name="fphonenumber" id="fphonenumber"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789">
+            <p>Podaj numer w formacie 123-456-789</p>
+        </div>
+        <div>
+            <label for="fbirthday">Data urodzenia: </label>
+            <input type="date" name="fbirthday" id="fbirthday">
+        </div>
+        <div>
+            <label for="fcountry">Kraj pochodzenia: </label>
+            <input type="text" name="fcountry" id="fcountry" class="hz">
+        </div>
+        <div>
+            <label for="fwojed">Wojewodstwo: </label>
+            <input type="text" name="fwojed" id="fwojed">
+        </div>
+        <div>
+            <label for="fadres">Adres zamieszkania: </label>
+            <input type="text" name="fadres" id="fadres">
+        </div>
+        <div>A: <input type="checkbox"></div>
+        <div>B: <input type="checkbox"></div>
+        <div>C: <input type="checkbox"></div>
+        <button>clear</button>
+        <div>
+            <label for="fadrkor">Adres korespondencyjny: </label>
+            <input type="text" name="fadrkor" id="fadrkor">
+        </div>
+        <input type="submit" value="Prześlij" onclick="checkValue(chValue),checkValue(chValue1),checkValue(chValue2),checkValue(chValue3),checkValue(chValue4),checkValue(chValue5),checkValue(chValue6),checkBirthday(chValue1)">
+    </form>
+    <script src="lab7-8.js"></script>
+</body>
+</html>
