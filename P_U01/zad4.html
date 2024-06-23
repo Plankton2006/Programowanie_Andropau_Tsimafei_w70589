@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj zwierzę</title>
+    <style>
+        .error { color: red; }
+        .success { color: green; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Dodaj zwierzę do tabeli</h1>
+    <form id="animalForm">
+        <label for="name">Nazwa zwierzęcia:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="species">Gatunek:</label>
+        <input type="text" id="species" name="species" required>
+        <br>
+        <label for="age">Wiek:</label>
+        <input type="number" id="age" name="age" required min="0">
+        <br>
+        <input type="submit" value="Dodaj zwierzę">
+    </form>
+
+    <p id="message"></p>
+
+    <h2>Lista zwierząt</h2>
+    <table id="animalsTable">
+        <thead>
+            <tr>
+                <th>Nazwa zwierzęcia</th>
+                <th>Gatunek</th>
+                <th>Wiek</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('animalForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById('name').value.trim();
+            const species = document.getElementById('species').value.trim();
+            const age = parseInt(document.getElementById('age').value.trim(), 10);
+
+            let message = '';
+            let messageType = '';
+
+            if (!name) {
+                message = 'Nazwa zwierzęcia jest wymagana.';
+                messageType = 'error';
+            } else if (!species) {
+                message = 'Gatunek jest wymagany.';
+                messageType = 'error';
+            } else if (isNaN(age) || age < 0) {
+                message = 'Wiek musi być liczbą dodatnią.';
+                messageType = 'error';
+            } else {
+                const table = document.getElementById('animalsTable').getElementsByTagName('tbody')[0];
+                const newRow = table.insertRow();
+
+                const nameCell = newRow.insertCell(0);
+                const speciesCell = newRow.insertCell(1);
+                const ageCell = newRow.insertCell(2);
+
+                nameCell.textContent = name;
+                speciesCell.textContent = species;
+                ageCell.textContent = age;
+
+                message = 'Zwierzę zostało dodane.';
+                messageType = 'success';
+
+                document.getElementById('animalForm').reset();
+            }
+
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = message;
+            messageElement.className = messageType;
+        });
+    </script>
+</body>
+</html>
