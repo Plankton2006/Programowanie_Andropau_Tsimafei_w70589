@@ -1,0 +1,14 @@
+C:\Users\Timofei\source\repos\Projekt\Projekt\bin\Debug\net8.0\Projekt.exe
+C:\Users\Timofei\source\repos\Projekt\Projekt\bin\Debug\net8.0\Projekt.deps.json
+C:\Users\Timofei\source\repos\Projekt\Projekt\bin\Debug\net8.0\Projekt.runtimeconfig.json
+C:\Users\Timofei\source\repos\Projekt\Projekt\bin\Debug\net8.0\Projekt.dll
+C:\Users\Timofei\source\repos\Projekt\Projekt\bin\Debug\net8.0\Projekt.pdb
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.AssemblyInfoInputs.cache
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.AssemblyInfo.cs
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.dll
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\refint\Projekt.dll
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.pdb
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\Projekt.genruntimeconfig.cache
+C:\Users\Timofei\source\repos\Projekt\Projekt\obj\Debug\net8.0\ref\Projekt.dll
